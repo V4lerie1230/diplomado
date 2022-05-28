@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profesores</title>
+</head>
+<body>
+
+<h1>
+    lista de profesores:
+</h1>
+{% for profesores in profesores %}
+    {{ profesor.nombre }} -- {{ profesor.apellido }} <br>
+{% endfor %}
+
+</body>
+</html>
