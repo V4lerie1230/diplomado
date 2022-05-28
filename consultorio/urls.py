@@ -13,7 +13,7 @@ urlpatterns = [
     path('lista_doctores', views.get_doctores_list, name="lista-doctores"),
     path('lista_pacientes', views.PacienteListView.as_view(), name="lista-pacientes"),
     path('lista_pacientes/crear', views.PacienteCreateView.as_view(), name="crear-jugadores"),
-    path('paciente/<int:pk>/', views.PacienteDetailView.as_view(), name='detalle-jugadores'),
+    path('jugadores/<int:pk>/', views.PacienteDetailView.as_view(), name='detalle-jugadores'),
     path('paciente/<int:pk>/eliminar/', views.PacienteDeleteView.as_view(), name='eliminar-jugadores'),
     path('paciente/<int:pk>/actualizar/', views.PacienteDeleteView.as_view(), name='actualizar-jugadores'),
 
