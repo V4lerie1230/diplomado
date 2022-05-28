@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path
 from django.views.generic import TemplateView
-from jugadores import views
+from paciente import views
 
 app_name = 'consultorio'
 urlpatterns = [
