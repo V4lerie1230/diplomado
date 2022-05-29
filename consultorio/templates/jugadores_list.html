@@ -17,12 +17,12 @@
     lista de jugadores:
 </h1>
 {% for jugadores in jugadores_list %}
-    <a href="{% url 'consultorio:detalle-jugadores'  jugadores.uniqueId %}">
+    <a href="{% url 'partidos:detalle-jugadores'  jugadores.uniqueId %}">
         {{ jugador.nombre }} -- {{ jugador.apellido }}
     </a><br>
 {% endfor %}
 
-    <a href="{% url 'consultorio:crear-jugadores' %}" class="btn btn-lg btn-success">
+    <a href="{% url 'partidos:crear-jugadores' %}" class="btn btn-lg btn-success">
     Crear jugadores
     </a>
 
